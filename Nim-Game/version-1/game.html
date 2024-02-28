@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The game of NIM</title>
+    <script src="Nim.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylingPage.css" />
+  </head>
+  <body>
+    <div id="theHolePage">
+      <h1 class="headerPage">Welcome to Nim Game!</h1>
+      <p class="description">
+        For this game, start by selecting the number of sticks to divide. If you
+        can successfully go through, you may win. otherwise, you'll lose.
+      </p>
+      <div class="first_content">
+        <label for="inputNumber" class="labelForNumber"
+          >Please select the number of starting sticks:-</label
+        >
+        <input
+          id="inputForSticksNo"
+          type="number"
+          class="inputNumber"
+          value="7"
+          min="7"
+          max="10"
+        />
+      </div>
+      <div class="first_content">
+        <label for="inputPilesNo" class="labelForNumber"
+          >Please select the number of starting piles:-</label
+        >
+        <input
+          id="inputForPilesNo"
+          type="number"
+          class="inputNumber"
+          value="1"
+          min="1"
+          max="3"
+          oninput="addSticksInputs(this.value)"
+        />
+        <input
+          type="submit"
+          class="playInput"
+          onclick="startPlayingGame()"
+          value="Play"
+        />
+      </div>
+       <div id="versionTwo">
+        <label class="versionTwoLabel">You want to play another version?</label>
+        <button class="versionTwoButton" >
+          <a href="../version-2/nim-version-2.html" target="_blank" style="color:black; text-decoration: none;">
+            Version Two</a>
+      </button>
+       </div>
+      <div class="rules">
+        <p class="rulesPara">The Rules of this game is:-<br><br> 1-Split the pile that you think its good for you and its color is blue button!<br><br>2-If you can't split the pile you'll lose , so split the pile that your opononet  can't divide</p>
+        <video src="demo.mp4" autoplay loop muted playsinline></video>
+       </div>
+    </div>
+    <div id="popup" class="popup"></div>
+    <img src="Ai.png" width="350px" height="350px" class="aiRobot" id="aiRobot" alt="">  
+    <span id="aiMove"></span>
+    <div class="playingPage" id="playingPage">
+
+      <button onclick="startGame()" id="startBtn">Start</button>
+      </button>
+      <div class="dificullty" id="difficulty">
+      <label >   
+           <input name="difficulty" type="radio" id="easyBtn" class="dificulltyBtn" value="easy">
+           <span class="difficultySpan">Easy</span>
+      </label>
+      <label >   
+        <input name="difficulty" type="radio" id="hardBtn" class="dificulltyBtn" value="medium">
+        <span class="difficultySpan">Medium</span>
+   </label>
+      <label >   
+        <input name="difficulty" type="radio" id="hardBtn" class="dificulltyBtn" value="hard">
+        <span class="difficultySpan">Hard</span>
+   </label>
+   <label>
+    <input type="checkbox" id="firstTurn" class="dificulltyBtn">
+    <span class="difficultySpan">Play first?</span>
+   </label>
+  </div>
+      <h1 id="headerForHint" >I played my turn</h1>
+    </div>
+    <div>
+      <div id="buttons"></div>
+
+    </div>
+  </div>
+  </body>
+</html>
+ 

@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D7C49EFF;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  padding: 50px 100px;
+  background-color: #343148FF;
+  color: #D7C49EFF;
+  border-radius: 24px;
+  text-align: center;
+  margin-left: -150px;
+  border: 1px solid black;
+}
+
+.img-container{
+  z-index: 1;
+  margin-left: -300px;
+  margin-right: 5px;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  border: 1px solid rgb(87, 82, 121);
+  border-radius: 8px;
+}
+
+.game-rows {
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(87, 82, 121);
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.object {
+  width: 20px; 
+  height: 20px;
+  background-color:#B1624EFF; 
+  border: solid 1px #DAA03DFF;
+  margin-right: 5px; 
+  border-radius: 50%; 
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  border: 2px solid wheat;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+button {
+  font-size: 15px;
+  background-color: wheat;
+  color:black;
+  border: 2px solid wheat;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D7C49EFF;
+
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.user-controls {
+  margin-bottom: 0px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.game-controls-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.version-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 10px;
+  color: wheat;
+}
+
+.href {
+  color: wheat;
+  text-decoration: none;
+}
+
+.href:hover {
+  text-decoration: underline;
+}
+
+.first-player-label {
+  margin-left: -15px;
+}
+
+.input-number {
+  background-color: rgb(248, 233, 205);
+}

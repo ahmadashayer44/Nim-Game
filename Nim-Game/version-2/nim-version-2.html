@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NIM Game</title>
+    <link rel="stylesheet" href="nim-version-2.css">
+</head>
+<body>
+    
+    <div class="img-container">
+        <img src="robot-img.png" alt="Ai robot image">
+    </div>
+
+    <div class="container">
+        <h1>NIM Game</h1>
+
+        <p><b>
+            Welcome to the game of NIM! <br>In this version, you can remove any number of objects at once, but they must be in the same row. The player who leaves the last object for the opponent, wins!
+        </b></p>
+
+        <div class="game-info">
+            <p> Please select the difficulty:</span>
+                <input type="radio" name="difficulty" id="easy" value="easy"  class="radio">
+                <label for="easy" class="first-player-label">Easy</label>
+
+                <input type="radio" name="difficulty", id="hard" value="hard"
+                checked>
+                <label for="hard" class="first-player-label">Hard</label>
+            </p>
+
+            <p>Please select the first player: 
+                <input type="radio" name="firstPlayer" id="user" value="user" checked>
+                <label for="user" class="first-player-label">User</label>
+        
+                <input type="radio" name="firstPlayer", id="ai" value="ai">
+                <label for="ai" class="first-player-label">AI</label>
+            </p>
+            <p><button id="start-game-button">Start the game</button></p>
+
+            <p id="current-para">Current turn: 
+                <span id="currentPlayer"></span>
+            </p>
+
+            <p id="print-move-para"></p>
+            <p><span id="gameState"></span></p>
+        </div>
+
+
+        <div class="game-rows"></div>
+
+
+        <div class="game-controls">
+            <div class="user-controls">
+                <label for="rowIndex">Select the index of the row:
+                    &nbsp&nbsp&nbsp&nbsp</label>
+                <input class="input-number" type="number" id="rowIndex" min="0">
+            </div>
+            <div class="user-controls">
+                <label for="numObjects">Number of objects to remove:&nbsp</label>
+                <input class="input-number" type="number" id="numObjects" min="1">
+            </div> 
+        </div>
+
+
+        <div class="game-controls-buttons">
+            <div class="user-controls">
+                <button id="userMoveButton">Make Move</button>
+            </div>
+            <div class="user-controls">
+                <button id="playAgainButton">Play Again</button>
+            </div>
+        </div>
+
+        
+        <div class="version-div">
+            <p>
+                Want to play other versions?    
+                <span>
+                    <a class="href" href="../version-1/game.html" target="_blank">
+                    jump to the other version now!
+                    </a>
+                </span>
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <script src="nim-version-2.js"></script>
+</body>
+</html>
